@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)), url(scissors-combs-copy-space.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.nav{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    font-size:18px;
+    margin-top: 15px;
+}
+
+.nav .nav_list{
+    display: flex;
+    list-style:none;
+    gap: 10px 
+}
+
+.nav a{
+   color: rgb(172, 172, 172); 
+   text-decoration: none;
+   font-family: 'Asap', sans-serif;
+   position: relative;
+}
+
+.nav a::after{
+    content: "";
+    position: absolute;
+    background-color: #009688;
+    display: block;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.nav a:hover::after{
+    opacity: 1;
+}
+
+main{
+    height:  110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.primary-text{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(172, 172, 172); 
+    font-size: 32px;
+    
+}
+
+.secondary-text{
+    margin-bottom: 30px;
+    color: rgb(172, 172, 172); 
+    font-style: italic;
+    font-size: 23px;
+}
+
+.main-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-button{
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.4s all ease;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+    background: transparent;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    border: 1px solid #009688;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.primary-button:hover{
+    color: black;
+    background-color: #009688;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0  25px cyan,
+    0  0 100px cyan, 0 0 20px cyan;
+}
+
+.secondary-button{
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.4s all ease;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+    background: transparent;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    border: 1px solid #009688;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+.secondary-button:hover{
+    color: black;
+    background-color: #009688;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0  25px cyan,
+    0  0 100px cyan, 0 0 20px cyan;
+}
+
+
+
+
